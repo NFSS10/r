@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Redirect to other websites</title>
+</head>
+
+<body>
+    <h1>Add ?name="name_here"</h1>
+    <h3>Supported names</h3>
+    <h4>genshin_daily_check_in -> https://webstatic-sea.mihoyo.com/ys/event/signin-sea/index.html?act_id=e202102251931481</h4>
+</body>
+
+
+<script>
+    window.onload = function () {
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const name = urlParams.get("name");
+
+        switch (name) {
+            case "genshin_daily_check_in":
+                window.location = "https://webstatic-sea.mihoyo.com/ys/event/signin-sea/index.html?act_id=e202102251931481";
+                break;
+            default:
+                break;
+        }
+    }
+</script>
+
+</html>
