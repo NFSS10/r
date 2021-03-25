@@ -6,7 +6,7 @@
 </head>
 
 <body>
-    <h1>Add ?name="name_here"</h1>
+    <h1>Add: ?s=shortcut_here</h1>
     <h3>Supported names</h3>
     <h4>genshin_daily_check_in -> https://webstatic-sea.mihoyo.com/ys/event/signin-sea/index.html?act_id=e202102251931481</h4>
 </body>
@@ -16,7 +16,7 @@
     window.onload = function () {
         const queryString = window.location.search;
         const urlParams = new URLSearchParams(queryString);
-        const name = urlParams.get("name");
+        const name = urlParams.get("s");
 
         switch (name) {
             case "genshin_daily_check_in":
