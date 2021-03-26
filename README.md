@@ -2,4 +2,4 @@
 
 It's just a page that is used for other stuff...
 
-https://nfss10.github.io/r?s=<shortcut>
+https://nfss10.github.io/r?s=shortcut
